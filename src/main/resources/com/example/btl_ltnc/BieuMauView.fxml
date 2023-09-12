@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.BieuMauViewController">
+    <children>
+        <Label layoutX="85.0" layoutY="153.0" text="Tạo yêu cầu:" />
+        <Button fx:id="btnBD" layoutX="322.0" layoutY="188.0" mnemonicParsing="false" onAction="#getBangDiem" prefHeight="25.0" prefWidth="156.0" text="In sao bảng điểm" />
+        <Button fx:id="btnML" layoutX="130.0" layoutY="238.0" mnemonicParsing="false" onAction="#getML" prefHeight="25.0" prefWidth="156.0" text="Đơn xin mở lớp" />
+        <Button fx:id="btnCNSV" layoutX="130.0" layoutY="188.0" mnemonicParsing="false" onAction="#getCNSV" text="Giấy chứng nhận sinh viên" />
+        <Button fx:id="btnDKVL" layoutX="130.0" layoutY="285.0" mnemonicParsing="false" onAction="#getDKVL" prefHeight="25.0" prefWidth="156.0" text="Đơn xin đăng ký vào lớp" />
+        <Button fx:id="btnPTD" layoutX="322.0" layoutY="238.0" mnemonicParsing="false" onAction="#getPTD" prefHeight="25.0" prefWidth="156.0" text="Đơn xin phúc tra điểm" />
+        <Button fx:id="btnGGT" layoutX="322.0" layoutY="285.0" mnemonicParsing="false" onAction="#getGGT" prefHeight="25.0" prefWidth="156.0" text="Giấy giới thiệu" />
+        <ImageView fitHeight="70.0" fitWidth="600.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@media/template.PNG" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@media/template2.PNG" />
+            </image>
+        </ImageView>
+      <Text layoutX="264.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ BIỂU MẪU" wrappingWidth="248.8000122070314">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBMBackToMenu" layoutX="513.0" layoutY="362.0" onAction="#backToMenu" text="Back to Menu" />
+
+    </children>
+</AnchorPane>

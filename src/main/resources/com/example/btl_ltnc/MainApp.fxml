@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.MainMenuViewController">
+    <VBox alignment="CENTER" layoutX="418.0" layoutY="254.0" spacing="20.0">
+        <HBox alignment="CENTER" spacing="20.0" />
+        <HBox alignment="CENTER" spacing="20.0" />
+        <HBox alignment="CENTER" spacing="20.0" />
+    </VBox>
+    <HBox alignment="CENTER" layoutX="189.0" layoutY="405.0" spacing="20.0" />
+    <Button layoutX="25.0" layoutY="334.0" onAction="#handleKhoaVienView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Khoa Viện" />
+    <Button layoutX="27.0" layoutY="219.0" onAction="#handlePhongHocView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Phòng Học" />
+    <Button layoutX="25.0" layoutY="374.0" onAction="#handleTaiKhoanView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Tài Khoản" />
+    <Button layoutX="26.0" layoutY="141.0" onAction="#handleLopHocPhanView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Lớp Học Phần" />
+    <Button layoutX="27.0" layoutY="294.0" onAction="#handleLopView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Lớp" />
+    <Button layoutX="25.0" layoutY="494.0" onAction="#handleChuongTrinhDaoTaoView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Chương Trình Đào Tạo" />
+    <Button layoutX="25.0" layoutY="101.0" onAction="#handleSinhVienView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Sinh Viên" />
+    <Button layoutX="25.0" layoutY="254.0" onAction="#handleKyHocView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Kỳ Học" />
+    <Button layoutX="25.0" layoutY="179.0" onAction="#handleNopHocPhiView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Nộp Học Phí" />
+    <Button layoutX="25.0" layoutY="454.0" onAction="#handleGiangVienView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Giảng Viên" />
+    <Button layoutX="27.0" layoutY="414.0" onAction="#handleHocPhanView" prefHeight="40.0" prefWidth="188.0" text="Quản lý Học Phần" />
+    <Button layoutX="826.0" layoutY="75.0" onAction="#backToMenu" prefHeight="40.0" prefWidth="127.0" text="Đăng xuất" />
+
+
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="backgroundImage" fitHeight="421.0" fitWidth="682.0" layoutX="247.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/nen.jpg" />
+        </image>
+    </ImageView>
+
+    <Text layoutX="367.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ ĐÀO TẠO ĐẠI HỌC BÁCH KHOA HÀ NỘI" wrappingWidth="441.33660888671875">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Text>
+</AnchorPane>

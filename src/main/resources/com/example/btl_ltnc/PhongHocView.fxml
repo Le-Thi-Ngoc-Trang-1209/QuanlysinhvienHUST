@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.PhongHocController">
+
+    <TextField fx:id="msphField" layoutX="678.0" layoutY="259.0" promptText="MSPH" />
+    <TextField fx:id="tenPhongHocField" layoutX="678.0" layoutY="301.0" promptText="Tên Phòng Học" />
+    <TextField fx:id="chucNangField" layoutX="678.0" layoutY="339.0" promptText="Chức Năng" />
+    <TextField fx:id="sucChuaField" layoutX="678.0" layoutY="383.0" promptText="Sức Chứa" />
+
+    <Button fx:id="addButton" layoutX="753.0" layoutY="437.0" onAction="#handleAddButton" text="Thêm" />
+    <Button fx:id="updateButton" layoutX="663.0" layoutY="437.0" onAction="#handleUpdateButton" text="Cập nhật" />
+    <Button fx:id="deleteButton" layoutX="814.0" layoutY="437.0" onAction="#handleDeleteButton" text="Xóa" />
+    <Button fx:id="searchButton" layoutX="501.0" layoutY="139.0" onAction="#handleSearchButton" text="Tìm kiếm" />
+    <Button fx:id="loadAllButton" layoutX="581.0" layoutY="139.0" onAction="#handleLoadAllButton" text="Tải tất cả" />
+    <Button fx:id="btnBackToMenu" layoutX="159.0" layoutY="482.0" onAction="#backToMenu" text="Back to Menu" />
+
+
+    <TextField fx:id="searchField" layoutX="158.0" layoutY="139.0" prefHeight="26.0" prefWidth="327.0" promptText="Tìm kiếm theo Tên Phòng Học" />
+
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+    <Text layoutX="326.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ PHÒNG HỌC" wrappingWidth="248.8000122070314">
+        <font>
+            <Font name="System Bold" size="21.0" />
+        </font>
+    </Text>
+     <TableView fx:id="tableView" layoutX="159.0" layoutY="184.0" prefHeight="286.0" prefWidth="485.0">
+         <columns>
+             <TableColumn fx:id="msphColumn" prefWidth="100.0" text="MSPH" />
+             <TableColumn fx:id="tenPhongHocColumn" prefWidth="150.0" text="Tên Phòng Học" />
+             <TableColumn fx:id="chucNangColumn" prefWidth="150.0" text="Chức Năng" />
+             <TableColumn fx:id="sucChuaColumn" prefWidth="80.0" text="Sức Chứa" />
+         </columns>
+     </TableView>
+</AnchorPane>

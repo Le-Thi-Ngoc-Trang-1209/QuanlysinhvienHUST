@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.LopHocPhanController">
+    <VBox layoutX="10.0" layoutY="184.0" prefHeight="282.0" prefWidth="780.0">
+        <TableView fx:id="tableView" prefHeight="282.0" prefWidth="766.0">
+            <columns>
+                <TableColumn fx:id="maLopGiangDayColumn" prefWidth="80.0" text="Mã Lớp Giảng Dạy" />
+                <TableColumn fx:id="thoiGianBatDauColumn" prefWidth="150.0" text="Thời Gian Bắt Đầu" />
+                <TableColumn fx:id="thoiGianKetThucColumn" prefWidth="150.0" text="Thời Gian Kết Thúc" />
+                <TableColumn fx:id="phongHocColumn" prefWidth="80.0" text="Phòng Học" />
+                <TableColumn fx:id="tenMonHocColumn" prefWidth="150.0" text="Tên Môn Học" />
+                <TableColumn fx:id="maHocPhanColumn" prefWidth="80.0" text="Mã Học Phần" />
+                <TableColumn fx:id="soLuongSinhVienColumn" prefWidth="80.0" text="Số Lượng Sinh Viên" />
+                <TableColumn fx:id="msgvColumn" prefWidth="80.0" text="MSGV" />
+                <TableColumn fx:id="tenGiangVienColumn" prefWidth="150.0" text="Tên Giảng Viên" />
+            </columns>
+        </TableView>
+    </VBox>
+    <!-- Các trường dữ liệu để nhập và chỉnh sửa -->
+    <TextField fx:id="maLopGiangDayField" layoutX="813.0" layoutY="208.0" promptText="Mã Lớp Giảng Dạy" />
+    <TextField fx:id="thoiGianBatDauField" layoutX="813.0" layoutY="234.0" promptText="Thời Gian Bắt Đầu (yyyy-MM-dd HH:mm:ss)" />
+    <TextField fx:id="thoiGianKetThucField" layoutX="814.0" layoutY="260.0" promptText="Thời Gian Kết Thúc (yyyy-MM-dd HH:mm:ss)" />
+    <TextField fx:id="phongHocField" layoutX="813.0" layoutY="286.0" promptText="Phòng Học" />
+    <TextField fx:id="tenMonHocField" layoutX="813.0" layoutY="312.0" promptText="Tên Môn Học" />
+    <TextField fx:id="maHocPhanField" layoutX="814.0" layoutY="338.0" promptText="Mã Học Phần" />
+    <TextField fx:id="soLuongSinhVienField" layoutX="813.0" layoutY="364.0" promptText="Số Lượng Sinh Viên" />
+    <TextField fx:id="msgvField" layoutX="813.0" layoutY="390.0" promptText="MSGV" />
+    <TextField fx:id="tenGiangVienField" layoutX="813.0" layoutY="416.0" promptText="Tên Giảng Viên" />
+
+    <!-- Các nút thực hiện chức năng -->
+    <Button fx:id="addButton" layoutX="865.0" layoutY="482.0" onAction="#handleAddButton" text="Thêm" />
+    <Button fx:id="updateButton" layoutX="782.0" layoutY="482.0" onAction="#handleUpdateButton" text="Cập nhật" />
+    <Button fx:id="deleteButton" layoutX="926.0" layoutY="482.0" onAction="#handleDeleteButton" text="Xóa" />
+    <Button fx:id="searchButton" layoutX="550.0" layoutY="139.0" onAction="#handleSearchButton" text="Tìm kiếm" />
+    <Button fx:id="loadAllButton" layoutX="631.0" layoutY="139.0" onAction="#handleLoadAllButton" text="Tải tất cả" />
+    <Button fx:id="btnBackToMenu" layoutX="14.0" layoutY="482.0" onAction="#backToMenu" text="Back to Menu" />
+
+
+    <!-- Trường tìm kiếm -->
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="139.0" prefHeight="26.0" prefWidth="518.0" promptText="Tìm kiếm theo Mã Lớp Giảng Dạy, Tên Môn Học, MSGV" />
+
+    <!-- Hình ảnh đẹp cho giao diện -->
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+    <Text layoutX="296.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ LỚP HỌC PHẦN" wrappingWidth="285.60000000000014">
+        <font>
+            <Font name="System Bold" size="21.0" />
+        </font>
+    </Text>
+</AnchorPane>

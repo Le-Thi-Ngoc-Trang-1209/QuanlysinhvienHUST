@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.MainMenuViewController">
+    <children>
+        <Button layoutX="86.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleHocPhanView" text="Học phần" />
+        <Button layoutX="86.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleNopHocPhiView" text="Nộp học phí" />
+        <Button layoutX="86.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleGiangVienView" text="Giảng viên" />
+        <Button layoutX="86.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleSinhVienView" text="Sinh viên" />
+        <Button layoutX="305.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleKyHocView" text="Kỳ học" />
+        <Button layoutX="305.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleChuongTrinhDaoTaoView" text="Chương trình đào tạo" />
+        <Button layoutX="305.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleLopView" text="Lớp" />
+        <Button layoutX="305.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleLopHocPhanView" text="Lớp học phần" />
+        <Button layoutX="479.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleTaiKhoanView" text="Tài khoản" />
+        <Button layoutX="479.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleKhoaVienView" text="Khoa viện" />
+        <Button layoutX="479.0" layoutY="181.0" mnemonicParsing="false" onAction="#handlePhongHocView" text="Phòng học" />
+    </children>
+</AnchorPane>

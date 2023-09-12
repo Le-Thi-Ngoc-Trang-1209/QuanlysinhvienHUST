@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.KhoaVienController">
+    <VBox layoutX="10.0" layoutY="184.0" prefHeight="282.0" prefWidth="780.0">
+        <TableView fx:id="tableView" prefHeight="286.0" prefWidth="780.0">
+            <columns>
+                <TableColumn fx:id="mskvColumn" prefWidth="80.0" text="MSKV" />
+                <TableColumn fx:id="tenKhoaVienColumn" prefWidth="150.0" text="Tên Khoa Viện" />
+                <TableColumn fx:id="tenNhanVatColumn" prefWidth="150.0" text="Tên Nhân Vật" />
+                <TableColumn fx:id="chucVuColumn" prefWidth="150.0" text="Chức Vụ" />
+                <TableColumn fx:id="mscColumn" prefWidth="100.0" text="MSC" />
+                <TableColumn fx:id="diaChiColumn" prefWidth="200.0" text="Địa Chỉ" />
+                <TableColumn fx:id="sdtColumn" prefWidth="100.0" text="SĐT" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <TextField fx:id="mskvField" layoutX="814.0" layoutY="184.0" promptText="MSKV" />
+    <TextField fx:id="tenKhoaVienField" layoutX="814.0" layoutY="206.0" promptText="Tên Khoa Viện" />
+    <TextField fx:id="tenNhanVatField" layoutX="814.0" layoutY="232.0" promptText="Tên Nhân Vật" />
+    <TextField fx:id="chucVuField" layoutX="814.0" layoutY="258.0" promptText="Chức Vụ" />
+    <TextField fx:id="mscField" layoutX="814.0" layoutY="284.0" promptText="MSC" />
+    <TextField fx:id="diaChiField" layoutX="814.0" layoutY="312.0" promptText="Địa Chỉ" />
+    <TextField fx:id="sdtField" layoutX="814.0" layoutY="336.0" promptText="SĐT" />
+
+    <Button fx:id="addButton" layoutX="865.0" layoutY="482.0" onAction="#handleAddButton" text="Thêm" />
+    <Button fx:id="updateButton" layoutX="782.0" layoutY="482.0" onAction="#handleUpdateButton" text="Cập nhật" />
+    <Button fx:id="deleteButton" layoutX="926.0" layoutY="482.0" onAction="#handleDeleteButton" text="Xóa" />
+    <Button fx:id="searchButton" layoutX="550.0" layoutY="139.0" onAction="#handleSearchButton" text="Tìm kiếm" />
+    <Button fx:id="loadAllButton" layoutX="631.0" layoutY="139.0" onAction="#handleLoadAllButton" text="Tải tất cả" />
+    <Button fx:id="btnBackToMenu" layoutX="14.0" layoutY="482.0" onAction="#backToMenu" text="Back to Menu" />
+
+
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="139.0" prefHeight="26.0" prefWidth="518.0" promptText="Tìm kiếm theo Tên Khoa Viện, Tên Nhân Vật" />
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+
+    <Text layoutX="326.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ KHOA VIỆN" wrappingWidth="248.8000122070314">
+        <font>
+            <Font name="System Bold" size="21.0" />
+        </font>
+    </Text>
+</AnchorPane>

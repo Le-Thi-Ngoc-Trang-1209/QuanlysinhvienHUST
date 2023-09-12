@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.SVViewController">
+<children>
+    <Button fx:id="button1" layoutX="71.0" layoutY="170.0" mnemonicParsing="false" onAction="#getQLHP" prefHeight="45.0" prefWidth="178.0" text="Quản lý học phần" />
+    <Button fx:id="button2" layoutX="71.0" layoutY="227.0" mnemonicParsing="false" onAction="#getDKLSV" prefHeight="45.0" prefWidth="178.0" text="Quản lý đăng ký" />
+    <Button fx:id="button3" layoutX="71.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleDoAnView" prefHeight="45.0" prefWidth="178.0" text="Quản lý đồ án" />
+    <Button fx:id="button4" layoutX="71.0" layoutY="342.0" mnemonicParsing="false" onAction="#getBM" prefHeight="51.0" prefWidth="178.0" text="Quản lý biểu mẫu" />
+    <Button fx:id="button5" layoutX="71.0" layoutY="402.0" mnemonicParsing="false" onAction="#getHP" prefHeight="51.0" prefWidth="178.0" text="Quản lý học phí" />
+    <ImageView fitHeight="70.0" fitWidth="600.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+    <Text layoutX="206.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ ĐÀO TẠO ĐẠI HỌC BÁCH KHOA HÀ NỘI" wrappingWidth="441.33660888671875">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Text>
+    <Button layoutX="836.0" layoutY="85.0" onAction="#backToMenu" prefHeight="40.0" prefWidth="127.0" text="Đăng xuất" />
+      <Button fx:id="button6" layoutX="71.0" layoutY="465.0" mnemonicParsing="false" onAction="#getTKB" prefHeight="51.0" prefWidth="178.0" text="Thời khoá biểu" />
+      <Label layoutX="384.0" layoutY="208.0" text="Họ và tên:" />
+      <TextField fx:id="htTSV" layoutX="516.0" layoutY="200.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="381.0" layoutY="288.0" text="Chương trình:" />
+      <Label layoutX="383.0" layoutY="331.0" text="Ngày sinh:" />
+      <Label layoutX="383.0" layoutY="373.0" text="Ngày nhập học:" />
+      <Label layoutX="830.0" layoutY="433.0" text="Mức cảnh cáo:" />
+      <TextField fx:id="htMSSV" layoutX="517.0" layoutY="243.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="htCTDT" layoutX="516.0" layoutY="284.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="htNS" layoutX="516.0" layoutY="327.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="htNNH" layoutX="516.0" layoutY="369.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="htMCC" layoutX="805.0" layoutY="463.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="384.0" layoutY="247.0" text="MSSV:" />
+      <Button fx:id="hienthi" layoutX="624.0" layoutY="158.0" mnemonicParsing="false" onAction="#hienthi" text="THÔNG TIN SINH VIÊN" />
+      <TextField fx:id="htQQ" layoutX="517.0" layoutY="415.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="htCCCD" layoutX="517.0" layoutY="455.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="384.0" layoutY="420.0" text="Quê quán:" />
+      <Label layoutX="386.0" layoutY="467.0" text="Căn cước công dân:" />
+      <Label layoutX="855.0" layoutY="200.0" text="CPA:" />
+      <Label layoutX="854.0" layoutY="308.0" text="GPA:" />
+      <TextField fx:id="htCPA" layoutX="807.0" layoutY="252.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="htGPA" layoutX="805.0" layoutY="355.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="802.0" layoutY="219.0" text="(Điểm trung bình tích luỹ)" />
+      <Label layoutX="801.0" layoutY="331.0" text="(Điểm trung bình học kỳ)" />
+</children>
+</AnchorPane>

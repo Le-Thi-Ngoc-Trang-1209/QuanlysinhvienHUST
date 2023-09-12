@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.BM.GGT">
+    <children>
+        <Label layoutX="82.0" layoutY="32.0" text="ĐẠI HỌC BÁCH KHOA HÀ NỘI" />
+        <Label layoutX="330.0" layoutY="24.0" text="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" />
+        <Label layoutX="368.0" layoutY="41.0" text="Độc lập – Tự do – Hạnh phúc" />
+        <Label layoutX="197.0" layoutY="81.0" text="GIẤY CHỨNG NHẬN SINH VIÊN">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="21.0" layoutY="141.0" text="Chứng nhận anh/chị:" />
+        <Label layoutX="342.0" layoutY="141.0" text="MSSV:" />
+        <Label layoutX="21.0" layoutY="178.0" text="Sinh ngày:" />
+        <Label layoutX="302.0" layoutY="178.0" text="Tại tỉnh/thành phố:" />
+        <TextField fx:id="htTSV" layoutX="142.0" layoutY="137.0" />
+        <TextField fx:id="htNS" layoutX="142.0" layoutY="174.0" />
+        <TextField fx:id="htMSSV" layoutX="407.0" layoutY="137.0" />
+        <TextField fx:id="htQQ" layoutX="407.0" layoutY="174.0" />
+        <TextField layoutX="142.0" layoutY="215.0" prefHeight="25.0" prefWidth="413.0" promptText="Địa chỉ hiện tại bao gồm Xã/Phường - Thị trấn/Huyện - Thành phố/Tỉnh" />
+        <TextField fx:id="htCTDT" layoutX="142.0" layoutY="258.0" />
+        <TextField fx:id="htCCCD" layoutX="407.0" layoutY="258.0" />
+        <Label layoutX="18.0" layoutY="219.0" text="Địa chỉ hiện nay:" />
+        <Label layoutX="18.0" layoutY="262.0" text="Chương trình đào tạo:" />
+        <Label layoutX="203.0" layoutY="297.0" text="Giấy này có giá trị 30 ngày kể từ ngày ký" />
+        <Label layoutX="353.0" layoutY="262.0" text="CCCD:" />
+        <Label layoutX="400.0" layoutY="324.0" text="Hà Nội, ngày ... tháng ... năm ..." />
+        <Label layoutX="445.0" layoutY="347.0" text="HIỆU TRƯỞNG" />
+        <Button fx:id="btnsave0" layoutX="341.0" layoutY="380.0" mnemonicParsing="false" onAction="#getSave0" text="Lưu" />
+        <Button fx:id="btnBMBackToMenu" layoutX="266.0" layoutY="415.0" onAction="#backToMenu" text="Back to Menu" />
+        <Button layoutX="235.0" layoutY="380.0" mnemonicParsing="false" onAction="#hienthi" text="Tự động điền" />
+    </children>
+</AnchorPane>
